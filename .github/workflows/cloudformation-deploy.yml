@@ -18,11 +18,11 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-1  # or your preferred region
+          aws-region: eu-west-1
 
       - name: Deploy CloudFormation stack
         run: |
           aws cloudformation deploy \
-            --stack-name CF-EC2-New \
+            --stack-name CF-EC2-Test \
             --template-file cf-ec2-lab.yaml \
             --capabilities CAPABILITY_NAMED_IAM
