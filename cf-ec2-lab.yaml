@@ -19,7 +19,8 @@ Resources:
       InstanceType: t2.micro
       SecurityGroupIds:
         - !Ref MySecurityGroup
-      ImageId: ami-00c39f71452c08778 # Amazon Linux 2 in us-east-1
+      ImageId: ami-08b6a2983df6e9e25 # Amazon Linux 2 in us-east-1
       Tags:
         - Key: Name
           Value: CF-EC2-Lab
+
