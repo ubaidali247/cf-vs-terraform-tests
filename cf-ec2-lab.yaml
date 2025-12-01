@@ -4,7 +4,7 @@ MyEC2Instance:
     InstanceType: t2.micro
     SecurityGroupIds:
       - !Ref MySecurityGroup
-    ImageId: ami-08b6a2983df6e9e25  # <-- updated for eu-west-1
+    ImageId: ami-0acd9fd39de089f9b  # Latest Amazon Linux 2 AMI for eu-west-1
     Tags:
       - Key: Name
         Value: CF-EC2-Lab
