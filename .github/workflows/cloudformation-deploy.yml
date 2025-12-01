@@ -1,6 +1,9 @@
 name: CloudFormation Deploy
 
 on:
+  push:
+    branches:
+      - test-pr
   pull_request:
     paths:
       - '**.yaml'
